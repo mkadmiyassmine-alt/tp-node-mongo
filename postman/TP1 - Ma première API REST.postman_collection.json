@@ -549,6 +549,113 @@
         "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
       },
       "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"64f9e2c8a7b1b23d45f67890\",\r\n  \"date\": \"2026-10-05\",\r\n  \"motif\": \"Contrôle régulier\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Test patient inexistant\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/consultations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "consultations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"abc\",\r\n  \"date\": \"2026-10-05\",\r\n  \"motif\": \"Contrôle régulier\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Test erreur\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/consultations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "consultations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/consultations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "consultations"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"patient\": \"6abf83245e1fcaedaf5e21db\",\r\n  \"date\": \"2026-10-05\",\r\n  \"motif\": \"Contrôle régulier\",\r\n  \"traitement\": \"Aucun\",\r\n  \"medecin\": \"Dr Helmi\",\r\n  \"notes\": \"Patient en bonne santé\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:5000/api/consultations",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "5000",
+          "path": [
+            "api",
+            "consultations"
+          ]
+        }
+      },
+      "response": []
     }
   ]
 }
